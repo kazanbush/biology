@@ -2,12 +2,21 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>test</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Neucha&family=Press+Start+2P&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 <body>
     
 <div class="wrapper">
@@ -22,9 +31,8 @@
     </div>
 <script>
 
-var title = 'Тест по теме "Селекция"';
 
-var subtitle = "Этот тест позволяет оценить Ваши знания программы 10 класса по биологии.";
+var title  = 'Тест по теме "Селекция"';
 
 var questions=[
 {
@@ -135,86 +143,108 @@ function clearForm(name) {
 
 </div> <!--wrapper-->
 
-<div class="points">
-<h4 class="disp">Разбалловка:
-    <ul class="spisok">
-        <li>5 баллов - 5</li><br>
-        <li>4 балла - 4</li><br>
-        <li>3 балла - 3</li><br>
-        <li>2 балла - 2</li><br>
-    </ul>
-</h4>
-</div>
 
-<div class="poem">
-    <p class="poem__text"> 
-        Живет в тесной и дружной клеточной семье органелла, 
-        обеспечивающая клетку энергией, транспортирующая 
-        <select>
-            <option value="nothing">. . .</option>
-            <option value="syb">субстраты</option>
-            <option value="fer">ферменты</option>
-            <option value="bel">белки</option>
-        </select>                       
-        и окисляющая их, имя которой – 
-        <select>
-            <option value="nothing">. . .</option>
-            <option value="syb">лизосома</option>
-            <option value="fer">вакуоль</option>
-            <option value="bel">митохондрия</option>
-        </select>
-        Однако, невзирая на важную роль в жизни клетки и функционировании других органоидов,
-        <select>
-            <option value="nothing">. . .</option>
-            <option value="syb">лизосома</option>
-            <option value="fer">вакуоль</option>
-            <option value="bel">митохондрия</option>
-        </select>
-         чувствовала себя отстраненно и неловко в семье, 
-        ведь была одной из немногих 
-        <select>
-            <option value="nothing">. . .</option>
-            <option value="syb">немембранных</option>
-            <option value="fer">двумембранных</option>
-            <option value="bel">одномембранных</option>
-        </select>
-         органелл наряду с ядром и пластидами. 
-        Но другие сестры – 
-        <select>
-            <option value="nothing">. . .</option>
-            <option value="syb">лизосомы</option>
-            <option value="fer">вакуоли</option>
-            <option value="bel">митохондрии</option>
-        </select>
-        не разделяли ее переживаний и спокойно взаимодействовали со всеми членами семьи. 
-        <select>
-            <option value="nothing">. . .</option>
-            <option value="syb">немембранные</option>
-            <option value="fer">двумембранные</option>
-            <option value="bel">одномембранные</option>
-        </select>
-         товарищи 
-         <select>
-            <option value="nothing">. . .</option>
-            <option value="syb">лизосомы</option>
-            <option value="fer">вакуоли</option>
-            <option value="bel">митохондрии</option>
-        </select>
-         поддерживали органеллу и доказывали ей важность ее роли для клетки,
-        что в скором времени помогло 
-        <select>
-            <option value="nothing">. . .</option>
-            <option value="syb">лизосоме</option>
-            <option value="fer">вакуоли</option>
-            <option value="bel">митохондрии</option>
-        </select>
-        принять свою уникальность и полюбить себя.
-    </p>
+
+<p class="points">Количество баллов равно количеству заданий, решенных верно.</p>
+
+
+
+<p class="title__extra">Задание для улучшения результата <span class="alert">(не выполняется в случае отличного результата за предыдущее):</p></span>
+
+
+
+<div class="extra__task">
+<p>Выполните задания теста:</p>
+<p> <input type="text" id="z_1"> -- наука о методах создания новых и улучшения существующих пород животных, сортов растений и штаммов микроорганизмов.</p>
+<p>  <input type="text" id="z_2"> -- биологическое явление, при котором сохраняется жизнь и получается возможность продолжения рода наиболее приспособленных к данным условиям жизни особи.</p>
+<p> <input type="text" id="z_3">-- изменения в наследственном аппарате клетки, возникшие под действием каких-либо внешних или внутренних факторов.</p>
+
+<button class="extra__task-btn" onClick="proverit();">Проверить</button>
+<div id="rezultat"></div>
 </div>
 
 
+<script> 
+function proverit(){
+pr_otv_zadachi_1 = "Селекция"; 
+pr_otv_zadachi_2 = "Отбор";
+pr_otv_zadachi_3 = "Мутация";
+otv_uch_1 = document.getElementById('z_1').value;
+otv_uch_2 = document.getElementById('z_2').value;
+otv_uch_3 = document.getElementById('z_3').value;
+ball = 0;
+if(otv_uch_1 == pr_otv_zadachi_1){
+ball +=1;
+}
+if(otv_uch_2 == pr_otv_zadachi_2){
+ball +=1;
+}
+if(otv_uch_3 == pr_otv_zadachi_3){
+ball +=1;
+}
+vsego_zadach = 3;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
 
 
 
-</body>
-</html>
+
+<!--
+
+
+<p>Организмы, в геном которых встроены гены других видов, называют...</p>
+<p> <input type="radio" id="z_4">Гибридами</p>
+<p> <input type="radio" id="z_4">Трансгенными</p>
+<p> <input type="radio" id="z_4">Дискретными</p>
+
+<p>Мул - типичный пример:</p>
+<p> <input type="radio" id="z_5">Гетерозиса</p>
+<p> <input type="radio" id="z_5">Мутагенеза</p>
+<p> <input type="radio" id="z_5">Полиплодии</p>
+
+<p>Клонирование - это...</p>
+<p> <input type="radio" id="z_6" value="Скрещивание форм, отличающихся друг от друга по двум парам альтернативных признаков.">Скрещивание форм, отличающихся друг от друга по двум парам альтернативных признаков.</p>
+<p> <input type="radio" id="z_6" value="Появление естественным путем или получение нескольких генетически идентичных организмов путем бесполого размножения или партеногенеза.">Появление естественным путем или получение нескольких генетически идентичных организмов путем бесполого размножения или партеногенеза.</p>
+<p> <input type="radio" id="z_6" value="Ненаследственное изменение фенотипа, возникающее под влиянием факторов внешней среды в пределах нормы реакции генотипа.">Ненаследственное изменение фенотипа, возникающее под влиянием факторов внешней среды в пределах нормы реакции генотипа.</p>
+
+<p>Кому из ученых принадлежит следующий закон: При скрещивании двух гетерозиготных потомков первого поколения между собой во втором поколении наблюдается расщепление в определенном числовом соотношении...</p>
+<p> <input type="radio" id="z_7" value="Д.И. Менделеев">Д.И. Менделеев</p>
+<p> <input type="radio" id="z_7" value="Х.А. Кребс">Х.А. Кребс</p>
+<p> <input type="radio" id="z_7" value="Г.И. Мендель">Г.И. Мендель</p>
+
+<button onClick="proverit();">Проверить</button>
+<div id="rezultat"></div>
+
+<script>
+function proverit(){
+pr_otv_zadachi_4 = "Трансгенными"; 
+pr_otv_zadachi_5 = "Гетерозиса";
+pr_otv_zadachi_6 = "Появление естественным путем или получение нескольких генетически идентичных организмов путем бесполого размножения или партеногенеза.";
+pr_otv_zadachi_7 = "Г.И. Мендель";
+otv_uch_4 = document.getElementById('z_4').value;
+otv_uch_5 = document.getElementById('z_5').value;
+otv_uch_6 = document.getElementById('z_6').value;
+otv_uch_7 = document.getElementById('z_7').value;
+ball = 0;
+if(otv_uch_4 == pr_otv_zadachi_4){
+ball +=1;
+}
+if(otv_uch_5 == pr_otv_zadachi_5){
+ball +=1;
+}
+if(otv_uch_6 == pr_otv_zadachi_6){
+ball +=1;
+}
+if(otv_uch_7 == pr_otv_zadachi_7){
+ball +=1;
+}
+vsego_zadach = 4;
+procent_vip = ball/vsego_zadach * 100;
+document.getElementById('rezultat').innerHTML = "Задания выполнены верно на "+procent_vip+"%.";
+}
+</script>
+-->
+
+

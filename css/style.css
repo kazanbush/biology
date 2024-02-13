@@ -10,42 +10,36 @@ background-color: rgb(216, 255, 225);
 .wrapper {
 color: rgb(71, 97, 68);
 background-color: rgb(187, 226, 187);
+display: flex;
+font-family: "Neucha", cursive;
+font-weight: 400;
+font-style: normal;
 display: inline-block;
+font-size: 20px;
 }
 
 .btn {
-border: 3px white solid;
+    border: none;
 background-color: rgb(211, 245, 189);
 border-radius: 5px;
 color: green;
 padding: 5px;
+font-family: "Press Start 2P", system-ui;
+font-weight: 400;
+font-style: normal;
 }
 
 .btn:hover {
 background-color: aliceblue;
 color: blueviolet;
-border: blueviolet 3px solid;
 }
 
 .btn:active {
-
 background-color: rgb(194, 136, 194);
-;
 }
 
-.points {
-background-color: rgb(218, 181, 155);
-color: rgb(97, 69, 56);
-width: 200px;
-padding-left: 20px;
-border-radius: 10px;
-}
 
-.spisok {
-padding-right: 30px;
-}
-
-.poem {
+/*.poem {
 background-color: rgb(146, 204, 153);
 height: 290px;
 width: 700px;
@@ -53,12 +47,64 @@ position: relative;
 left: 5px;
 top: 20px;
 border-radius: 6px;
-}
+display: inline-block;
+}*/
 
-.poem__text {
+/*.poem__text {
 font-size: 20px;
 position: absolute;
 top: 10px;
 left: 30px;
 right: 30px;
+} */
+
+.title__extra {
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(248, 94, 94);
+}
+
+.extra__task {
+    background-color: rgb(201, 235, 179);
+    display: inline-block;
+    border: rgb(204, 159, 193) 3px solid;
+    font-family: "Neucha", cursive;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.points {
+    color: rgb(190, 169, 142);
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.alert {
+    color: brown;
+}
+
+.extra__task-btn {
+    border: none;
+    background-color: rgb(174, 92, 199);
+    display: inline-block;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    height: 20px;
+    color: rgb(231, 205, 255);
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+
+.extra__task-btn:hover {
+    background-color: rgb(227, 197, 255);
+color: rgb(248, 240, 255);
+
+
 }
